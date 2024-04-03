@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: "costumFonts";
+  src: url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype"),
+    url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype"),
+    url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
