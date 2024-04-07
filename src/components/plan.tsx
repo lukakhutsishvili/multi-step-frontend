@@ -30,7 +30,7 @@ const SelectPlan: React.FC<planType> = ({
           <p className="leading-[1.56] text-[16px] text-grey font-normal xl:mt-[11px]">
             You have the option of monthly or yearly billing.
           </p>
-          <div className="xl:flex xl:gap-2 ">
+          <div className="xl:flex xl:gap-2 xl:mt-[35px] ">
             <div
               onClick={() => {
                 setPlan("arcade");
