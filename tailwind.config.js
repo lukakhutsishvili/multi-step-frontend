@@ -2,10 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      ubuntu: ["costumFonts, sans-serif"],
+    },
     extend: {
-      fontFamily: {
-        ubuntu: ["costumFonts, sans-serif"],
-      },
       backgroundSize: {
         full: "100%",
       },
@@ -18,6 +18,10 @@ export default {
         skyBlue: "#bee2fd",
         red: "#ee374a",
         light: "#f8f9ff",
+        lighttext: "#abbcff",
+      },
+      screens: {
+        xl: "940px",
       },
     },
   },

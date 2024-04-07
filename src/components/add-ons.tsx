@@ -25,17 +25,20 @@ const AddOns: React.FC<addOnsType> = ({
   console.log(addOnsData);
   return (
     <>
-      <div className="flex flex-col gap-6">
-        <div className="mt-[99px] relative z-10 mx-4 rounded-[10px] px-6 py-8 bg-white">
-          <h1 className="font-bold text-darkBlue text-[24px]"> Pick add-ons</h1>
-          <p className="leading-[1.56] text-[16px] text-grey font-normal">
+      <div className="flex flex-col gap-6  xl:row-end-3 xl:gap-[81px] xl:row-start-1">
+        <div className="xl:pb-0 xl:pt-10 xl:pl-[100px] xl:pr-[100px] xl:m-0 mt-[99px] relative z-10 mx-4 rounded-[10px] px-6 py-8 bg-white">
+          <h1 className=" xl:text-[32px] font-bold text-darkBlue text-[24px]">
+            {" "}
+            Pick add-ons
+          </h1>
+          <p className=" xl:mt-[11px] leading-[1.56] text-[16px] text-grey font-normal">
             Add-ons help enhance your gaming experience.
           </p>
           <label
             htmlFor="addonlservice"
-            className={`px-4 py-[17px] mt-[22px] flex items-center justify-between gap-[14px] border-solid border-[1px] cursor-pointer  rounded-[8px]`}
+            className={`xl:h-[81px] px-4 py-[17px] mt-[22px] flex items-center justify-between gap-[14px] border-solid border-[1px] cursor-pointer  rounded-[8px]`}
           >
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 xl:gap-6">
               <input
                 type="checkbox"
                 id="addonlservice"
@@ -64,9 +67,9 @@ const AddOns: React.FC<addOnsType> = ({
           </label>
           <label
             htmlFor="addstorage"
-            className={`px-4 py-[17px] mt-[22px] flex items-center justify-between gap-[14px] border-solid border-[1px] cursor-pointer  rounded-[8px]`}
+            className={`xl:h-[81px]  px-4 py-[17px] mt-[22px] flex items-center justify-between gap-[14px] border-solid border-[1px] cursor-pointer  rounded-[8px]`}
           >
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 xl:gap-6">
               <input
                 type="checkbox"
                 id="addstorage"
@@ -95,9 +98,9 @@ const AddOns: React.FC<addOnsType> = ({
           </label>
           <label
             htmlFor="costumProf"
-            className={`px-4 py-[17px] mt-[22px] flex items-center justify-between gap-[14px] border-solid border-[1px] cursor-pointer  rounded-[8px]`}
+            className={`xl:h-[81px] px-4 py-[17px] mt-[22px] flex items-center justify-between gap-[14px] border-solid border-[1px] cursor-pointer  rounded-[8px]`}
           >
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 xl:gap-6">
               <input
                 type="checkbox"
                 id="costumProf"
@@ -127,13 +130,16 @@ const AddOns: React.FC<addOnsType> = ({
           {/* Repeat similar divs for other plans */}
         </div>
 
-        <footer className="mt-auto h-[72px] flex justify-between items-center bg-white px-4">
-          <button onClick={() => setPage(2)} className="text-grey">
+        <footer className="xl:row-start-2 xl:px-[100px] mt-auto h-[72px] flex justify-between items-center bg-white px-4">
+          <button
+            onClick={() => setPage(2)}
+            className="text-grey xl:text-[16px]"
+          >
             Go Back
           </button>
           <button
             onClick={handleSubmit(onSubmit)}
-            className="w-[97px] h-10 rounded-[4px] flex justify-center items-center bg-darkBlue text-white"
+            className="xl:rounded-[8px] xl:text-[16px] xl:h-12 xl:w-[123px] w-[97px] h-10 rounded-[4px] flex justify-center items-center bg-darkBlue text-white"
           >
             Next Step
           </button>

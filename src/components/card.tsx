@@ -20,7 +20,7 @@ const Card = () => {
 
   return (
     <>
-      <div className="bg-bgColor min-h-[100vh] flex flex-col font-ubuntu">
+      <div className="xl:p-4 xl:bg-white xl:grid xl:grid-cols-[274px_auto] bg-bgColor min-h-[100vh] flex flex-col font-ubuntu">
         <Header page={page} />
         {page == 1 && (
           <PersonalInfo
